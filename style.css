@@ -1,0 +1,340 @@
+/* global css */
+.element {
+      animation: fadeIn 2s ease-in-out forwards;
+      animation-trigger: scroll;
+}
+
+@keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+h1{ font-size: min( max(25px, 4vw), 70px);
+  font-family: 'Ephesis', cursive;
+ }
+
+h2{ font-size: min( max(18px, 4vw), 40px);
+    font-family: 'Aref Ruqaa Ink', serif;
+ }
+
+p,a { font-size: min( max(14px, 4vw), 30px);
+  font-family: 'Ephesis', cursive;
+ }
+ h3{ font-size: min( max(15px, 4vw), 30px);
+font-family: 'Aref Ruqaa Ink', serif;
+ }
+  h4{ font-size: min( max(14px, 4vw), 28px);
+font-family: 'Aref Ruqaa Ink', serif;
+ }
+
+.map-link a{
+font-size: min( max(18px, 4vw), 40px);
+    font-family: 'Aref Ruqaa Ink', serif;
+    text-decoration: none;
+    color: #000064;
+}
+
+.map-link a:hover{
+font-size: min( max(18px, 4vw), 40px);
+    color: #009eeef8;
+}
+
+
+@media (prefers-color-scheme: dark) {
+ body, html {
+     height: 100%;
+    color: #000064;
+    background-image: url('https://i.postimg.cc/sxVBNk07/Picture4.png');
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+body, html {
+ height: 100%;
+  color: #000064;
+  background-image: url('https://i.postimg.cc/sxVBNk07/Picture4.png');
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* Place text in the middle of the image */
+.header{
+  width: 100%;
+  text-align: center;
+}
+.header h1{
+  padding: 40px;
+  text-decoration: none;
+  font-family: 'Ephesis', cursive;
+  font-size: 10em;
+}
+.header a{
+  text-decoration: none;
+  color: #000064;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5em;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.header a:hover{
+  color:rgb(0, 117, 163);
+  text-decoration: none;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2em;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/* Default styles for all screen sizes */
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Wrap columns to new lines on small screens */
+  padding: 20px;
+  text-align: center;
+}
+
+.column {
+  flex: 1 0 20%; /* Make columns 20% width on large screens */
+  padding: 20px;
+  text-align: center;
+}
+
+.row > * {
+  flex-grow: 1;
+}
+
+.mainpadd{
+
+padding-top: clamp(15px, 5%, 100px);
+padding-bottom: clamp(15px, 5%, 100px);
+padding-left: clamp(15px, 5%, 100px);
+padding-right: clamp(15px, 5%, 100px);
+text-align: center;
+
+}
+
+.smallpadd{
+
+padding-top: clamp(10px, 5%, 50px);
+padding-bottom: clamp(10px, 5%, 50px);
+text-align: center;
+
+}
+
+.container {
+  width: 100%;
+  z-index: 1; /* Position behind the sticky bar and cards */
+}
+
+.front-container {
+  width: 100%;
+  height:1000px;
+  z-index: 1; /* Position behind the sticky bar and cards */
+}
+.centered-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* This will make the content take up the full height of the viewport */
+        }
+
+.openbutton {
+    background-color: #a8c0ff;
+    border: 2px solid #adcaff;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px #adcaff;
+    z-index: 2;
+}
+
+.openbutton:hover {
+    background-color: #c3d3ff;
+    box-shadow: 0 0 20px #adcaff;
+}
+
+.rsvp-button{
+  background-color: #000064;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Aref Ruqaa Ink', serif;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.rsvp-button:hover{
+  background-color: #009eeef8;
+}
+.copy-button {
+  background-color: #000064;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Aref Ruqaa Ink', serif;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.copy-button:hover {
+  background-color: #009eeef8;
+}
+
+
+ .responsive-image {
+   max-width: 100%; /* This will make the image scale down if it has to */
+   height: 100%; /* This will preserve the aspect ratio of the image */
+ }
+
+ /* Style the form container */
+ .form-container {
+   width: 100%;
+   max-width: 500px;
+   margin: 0 auto;
+   padding: 20px;
+   border: 1px solid #111111;
+   border-radius: 5px;
+ }
+
+ /* Style the form labels */
+ .form-container label {
+   display: block;
+   margin-bottom: 5px;
+   font-weight: bold;
+   font-family: 'Aref Ruqaa Ink', serif;
+
+ }
+
+ /* Style the form inputs */
+ .form-container input[type="text"],
+ .form-container textarea {
+   width: 100%;
+   padding: 5px;
+   border: 1px solid #111111;
+   border-radius: 3px;
+   font-family: 'Aref Ruqaa Ink', serif;
+
+ }
+
+ /* Style the submit button */
+ .form-container input[type="submit"] {
+   background-color: #111111;
+   width: 100%;
+   color: white;
+   padding: 10px 20px;
+   border: solid;
+   border-color: #ffffff;
+   border-radius: 5px;
+   cursor: pointer;
+ }
+
+ /* Style the form fields with required attribute */
+ .form-container input[required],
+ .form-container textarea[required] {
+   border-color: #111111;
+   outline-color: #111111;
+ }
+
+/* Add some basic styling to the carousel container */
+#wishlistCarousel {
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+/* Style the carousel items */
+.carousel-item {
+    text-align: center;
+}
+
+/* Add some padding and border to the items for better visual appeal */
+.carousel-item h2,
+.carousel-item h3,
+.carousel-item p {
+    padding: 10px;
+}
+
+/* Style the carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+/* Style the navigation arrows */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000000; /* black color for the arrows */
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Change the color of the arrow icon */
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    color: rgb(228, 7, 209);
+}
+
+
+
+
+/* phone css */
+@media (max-width: 768px) {
+
+  .container {
+    width: 80%;
+  }
+
+  .column {
+    flex: 1 0 100%; /* Make columns 100% width on small screens */
+  }
+
+  .mainpadd{
+
+padding-top: clamp(15px, 5%, 100px);
+padding-bottom: clamp(15px, 5%, 100px);
+text-align: center;
+}
+/* Place text in the middle of the image */
+.header{
+  width: 100%;
+  text-align: center;
+}
+.header h1{
+  padding: 30px;
+  text-decoration: none;
+  font-family: 'Ephesis', cursive;
+  font-size: 3em;
+}
+.header a{
+  text-decoration: none;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1em;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.header a:hover{
+  color:rgb(0, 117, 163);
+  text-decoration: none;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.7em;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+
+
+}
+
+
+
+
