@@ -1,1 +1,154 @@
+<!-- HOME PAGE -->
+<!DOCTYPE html>
+<html>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" type="image/x-icon" href="/resources/static/ring-icon.ico">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri&family=Aref+Ruqaa+Ink&family=Bebas+Neue&family=Ephesis&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+
+<head>
+    <title>Walimatulurus</title>
+    
+    <audio class="audio" style = "display:none;" autoplay loop>
+        <source src="../audio/biw.mp3" type="audio/mpeg">
+    </audio>
+</head>
+<body>
+
+    <div class="header element">
+        <div class="header">
+            <h1> Walimatulurus </h1>
+            <h1> Fatin & Haziq || Zarif & Shaihi </h1>
+        </div>
+    </div>
+    
+    <div class="mainpadd" style="width:100%;">
+        <div class="smallpadd element">
+        <img class="responsive-image" src="">
+    </div>
+
+        <div class="smallpadd element">
+        <p style="text-align:center;">Majlis Walimatulurus</p>
+        <h1 style="text-align:center;">Fatin & Haziq</h1>           
+        <h1 style="text-align:center;">Zarif & Shaihi</h1>           
+        <h3 style="text-align:center;">24 Februari 2024 | Isnin</h3>
+        <h3 style="text-align:center;">Dewan Komuniti Bandar Bukit Mahkota</h3>
+        </div>
+      <div class="smallpadd element">  
+    <iframe
+      id="JotFormIFrame-233312227507448"
+      title="WALIMATULURUS RSVP                                 FATIN & HAZIQ | ZARIF & SHAIHI"
+      onload="window.parent.scrollTo(0,0)"
+      allowtransparency="true"
+      allowfullscreen="true"
+      allow="geolocation; microphone; camera"
+      src="https://form.jotform.com/233312227507448"
+      frameborder="0"
+      style="min-width:100%;max-width:100%;height:539px;border:none;"
+      scrolling="no"
+    >
+    </iframe>
+    <script type="text/javascript">
+    var ifr = document.getElementById("JotFormIFrame-233312227507448");
+    if (ifr) {
+      var src = ifr.src;
+      var iframeParams = [];
+      if (window.location.href && window.location.href.indexOf("?") > -1) {
+        iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+      }
+      if (src && src.indexOf("?") > -1) {
+        iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+        src = src.substr(0, src.indexOf("?"))
+      }
+      iframeParams.push("isIframeEmbed=1");
+      ifr.src = src + "?" + iframeParams.join('&');
+    }
+    window.handleIFrameMessage = function(e) {
+      if (typeof e.data === 'object') { return; }
+      var args = e.data.split(":");
+      if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
+      if (!iframe) { return; }
+      switch (args[0]) {
+        case "scrollIntoView":
+          iframe.scrollIntoView();
+          break;
+        case "setHeight":
+          iframe.style.height = args[1] + "px";
+          if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
+            iframe.style.minHeight = args[1] + "px";
+          }
+          break;
+        case "collapseErrorPage":
+          if (iframe.clientHeight > window.innerHeight) {
+            iframe.style.height = window.innerHeight + "px";
+          }
+          break;
+        case "reloadPage":
+          window.location.reload();
+          break;
+        case "loadScript":
+          if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
+          var src = args[1];
+          if (args.length > 3) {
+              src = args[1] + ':' + args[2];
+          }
+          var script = document.createElement('script');
+          script.src = src;
+          script.type = 'text/javascript';
+          document.body.appendChild(script);
+          break;
+        case "exitFullscreen":
+          if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+          else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+          else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+          else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+          else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+          break;
+      }
+      var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+      if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+        var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+        iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+      }
+    };
+    window.isPermitted = function(originUrl, whitelisted_domains) {
+      var url = document.createElement('a');
+      url.href = originUrl;
+      var hostname = url.hostname;
+      var result = false;
+      if( typeof hostname !== 'undefined' ) {
+        whitelisted_domains.forEach(function(element) {
+            if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
+                result = true;
+            }
+        });
+        return result;
+      }
+    };
+    if (window.addEventListener) {
+      window.addEventListener("message", handleIFrameMessage, false);
+    } else if (window.attachEvent) {
+      window.attachEvent("onmessage", handleIFrameMessage);
+    }
+    </script>
+</div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+<script src="/resources/static/js/customs.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
 
