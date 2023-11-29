@@ -69,6 +69,12 @@ body, html {
   text-decoration: none;
   font-family: 'Ephesis', cursive;
   font-size: 5em;
+
+.header p{
+  padding: 40px;
+  text-decoration: none;
+  font-family: 'Ephesis', cursive;
+  font-size: 0.5em;    
 }
 .header a{
   text-decoration: none;
@@ -314,6 +320,12 @@ text-align: center;
   text-decoration: none;
   font-family: 'Ephesis', cursive;
   font-size: 3em;
+}
+ .header p{
+  padding: 40px;
+  text-decoration: none;
+  font-family: 'Ephesis', cursive;
+  font-size: 0.5em;    
 }
 .header a{
   text-decoration: none;
