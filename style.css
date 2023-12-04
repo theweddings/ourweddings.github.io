@@ -43,7 +43,7 @@ font-size: min( max(18px, 4vw), 40px);
 @media (prefers-color-scheme: dark) {
  body, html {
      height: 100%;
-    color: #000064;
+    color: #111;
     background-image: url('https://i.postimg.cc/sxVBNk07/Picture4.png');
     background-position: center;
     background-size: cover;
@@ -52,7 +52,7 @@ font-size: min( max(18px, 4vw), 40px);
 
 body, html {
  height: 100%;
-  color: #000064;
+  color: #111;
   background-image: url('https://i.postimg.cc/sxVBNk07/Picture4.png');
   background-position: center;
   background-size: cover;
